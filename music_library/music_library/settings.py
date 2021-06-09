@@ -81,7 +81,7 @@ DATABASES = {
         'ENGINE': 'mysql.connector.django',
         'NAME': 'music_library_database',
         'USER': 'root',
-        'PASSWORD': 'Hadeel143!',
+        'PASSWORD': 'Rambo143!',
         'HOST': '127.0.0.1',
         'Port': '3306',
         'Options': {

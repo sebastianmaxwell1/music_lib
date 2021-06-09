@@ -11,7 +11,7 @@ class SongSerializer(serializers.Serializer):
     title = serializers.CharField(required=True, allow_blank=False, max_length=50)
     artist = serializers.CharField(required=True, allow_blank=False, max_length=50)
     album = serializers.CharField(required=True, allow_blank=False, max_length=50)
-    release_date = serializers.DateTimeField(allow_null=False)
+    release_date = serializers.DateField(allow_null=False)
 
     def create(self, validated_data):
         return Song.objects.create(**validated_data)
